@@ -1,7 +1,6 @@
 # Job Search App For Blue Collared Workers
 
 This project is a simple website build for blue collared workers to help them find jobs post pandemic with an interative and simple UI.
-
 <br/>
 
 # Front Page of Website
