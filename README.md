@@ -19,7 +19,7 @@ This project is a simple website build for blue collared workers to help them fi
 
 <br/>
 
-# Add New Job by Recruiter 
+# For Adding New Jobs
 
 <br/>
 
@@ -27,4 +27,4 @@ This project is a simple website build for blue collared workers to help them fi
 
 <br/>
 
-Happy Coding!!!
+#Happy Coding!!!
