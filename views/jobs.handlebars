@@ -1,0 +1,20 @@
+<section id="jobs" class="container">
+    <h1>All Jobs</h1>
+    {{#each jobs}}
+      <div class="job">
+        <h3 class="val-style">{{role}} <span style="float:right;color:white;">Company: <span style="color:yellow;">{{company}}</span></span></h3>  
+        <p>{{description}}</p>
+        <ul>
+          <li>Location: <span  class="val-style">{{city}}</span></li>
+          <li>Job Type: <span  class="val-style">{{job_type}}</span></li>
+          <li>Experience: <span  class="val-style">{{experience}} years</span></li>
+          <li>Salary Per Month:  <span style="color:yellow;">₹{{salary}}</span></li>
+        </ul>
+        <p>Skills Required: <span class="val-style">{{skills}}</span></p>
+        <p style="margin-top:5%;"><a  href="mailto:{{contact_email}}" class="btn btn-reverse">Apply Now</a> <a style="margin-left:5%;" class="btn btn-call" href="tel:{{contact_number}}">Call Recruiter</a></p>
+      </div>
+    {{else}}
+      <h1>No jobs available</h1>
+    {{/each}}
+    
+  </section>

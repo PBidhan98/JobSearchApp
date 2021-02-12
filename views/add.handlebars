@@ -1,0 +1,62 @@
+<section id="add" class="container">
+  <div class="form-wrap">
+      <h1 style="color: yellow;">Add A Job</h1>
+      <p>Your contact email will be shared with registered users to apply to the job</p>
+      {{#each errors}}
+        <div class="error">
+          <p>{{text}}</p>
+        </div>
+      {{/each}}
+      <form action="/jobs/add" method="POST">
+        <div class="input-group">
+          <label style="color: yellow;" for="role">Job Role</label>
+          <input type="text" name="role" id="role" class="input-box" placeholder="eg. Accountant, React developer"
+            maxlength="100" value={{role}}>
+        </div>
+        <div class="input-group">
+          <label style="color: yellow;" for="skills">Skills Required</label>
+          <input type="text" name="skills" id="skills" class="input-box" placeholder="eg. javascript, react, Node.js"
+          maxlength="100" value={{skills}}>
+        </div>
+        <div class="input-group">
+          <label style="color: yellow;" for="job_type">Job Type</label>
+          <input type="text" name="job_type" id="job_type" class="input-box" placeholder="eg. part-time, work-from-home, etc..."
+          maxlength="100" value={{job_type}}>
+        </div>
+        <div class="input-group">
+          <label style="color: yellow;" for="experience">Minimum Experience:</label>
+          <input type="text" name="experience" id="experience" class="input-box" placeholder="eg. 0, 1, 2, etc..."
+          maxlength="100" value={{experience}}>
+        </div>
+        <div class="input-group">
+          <label style="color: yellow;" for="city">City</label>
+          <input type="text" name="city" id="city" class="input-box" placeholder="eg. Delhi, Bangalore, etc..."
+          maxlength="100" value={{city}}>
+        </div>
+        <div class="input-group">
+          <label style="color: yellow;" for="company">Company</label>
+          <input type="text" name="company" id="company" class="input-box" placeholder="Enter Name of the Company"
+          maxlength="100" value={{company}}>
+        </div>
+        <div class="input-group">
+          <label style="color: yellow;" for="salary">Salary per Month</label>
+          <input type="number" name="salary" id="salary" class="input-box" placeholder="eg. 10000, 20000, 50000" value={{salary}}>
+        </div>
+        <div class="input-group">
+          <label style="color: yellow;" for="description">Job Description</label>
+          <textarea name="description" id="description" class="input-box" placeholder="Describe the details of the Job"
+            rows="10">{{description}}</textarea>
+        </div>
+        <div class="input-group">
+          <label style="color: yellow;" for="contact_number">Contact Number of Recruiter</label>
+          <input type="tel" name="contact_number" id="contact_number" class="input-box" placeholder="Enter 10 digit phone number" value={{contact_number}}>
+        </div>
+        <div class="input-group">
+          <label style="color: yellow;" for="contact_email">Contact Email</label>
+          <input type="email" name="contact_email" id="contact_email" class="input-box" placeholder="Enter recruiter email, abc@gmail.com" value={{contact_email}}>
+        </div>
+        <input  type="submit" value="Add Job" class="btn btn-reverse">
+      </form>
+  </div>
+</section>
+ 
