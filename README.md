@@ -3,6 +3,7 @@
 This project is a simple website build for blue collared workers to help them find jobs post pandemic with an interative and simple UI.
 
 <br/>
+
 # Front Page of Website
 
 <br/>
@@ -24,5 +25,7 @@ This project is a simple website build for blue collared workers to help them fi
 <br/>
 
 ![](public/img/add-page.png)
+
+<br/>
 
 Happy Coding!!!
