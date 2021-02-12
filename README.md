@@ -3,11 +3,19 @@
 This project is a simple website build for blue collared workers to help them find jobs post pandemic with an interative and simple UI.
 <br/>
 
-# Functional Prototype Video of App
+# Desktop View of App
 
 <br/>
 
-![](PreetiBidhan_JobSearchApp.gif)
+![](Videos/PreetiBidhan_JobSearchApp.gif)
+
+<br/>
+
+# Mobile View of App
+
+<br/>
+
+![](Videos/PreetiBidhan-JobSearchApp-Video.gif)
 
 <br/>
 
