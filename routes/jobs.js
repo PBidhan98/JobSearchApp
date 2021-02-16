@@ -106,6 +106,9 @@ router.get('/search', (req, res) => {
   role = role.toLowerCase();
   city = city.toLowerCase();
   
+  if(role.length == 0 && city.length != 0) role = "unknown";
+  if(role.length != 0 && city.length == 0) city = "unknown";
+  
   Job.findAll({ where: { 
     [Op.or]: [ 
       { 
